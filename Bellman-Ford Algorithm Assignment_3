@@ -24,8 +24,8 @@ int main() {
     int V = 5, E = 8;  // V -> Number of vertices, E -> Number of edges
     Graph* graph = createGraph(V, E);
  
-    graph->edge[0].source = 0;
-    graph->edge[0].destination = 1;
+    graph->edge[0].source = 1;
+    graph->edge[0].destination = 0;
     graph->edge[0].weight = 5;
 
     graph->edge[1].source = 0;
@@ -41,8 +41,8 @@ int main() {
     graph->edge[3].weight = 6;
 
     graph->edge[4].source = 3;
-    graph->edge[4].destination = 0;
-    graph->edge[4].weight = 2;
+    graph->edge[4].destination = 2;
+    graph->edge[4].weight = 3;
 
     graph->edge[5].source = 2;
     graph->edge[5].destination = 3;
